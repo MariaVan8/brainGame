@@ -5,39 +5,48 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+body{
+  background-image: url(../public/images/bg2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
-@keyframes logo-spin {
+
+.start-game {
+  align-self: center;
+  padding: 20px 50px;
+  font-size: 24px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.1); 
+  color: #fff;
+  transition: all 0.4s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 0 5px rgba(173, 216, 230, 1), 0 0 15px rgba(173, 216, 230, 1);
+  animation: pulse 1.5s infinite alternate;
+  border: 3px solid rgba(173, 216, 230, 0.5);
+}
+
+@keyframes pulse {
   from {
-    transform: rotate(0deg);
+      box-shadow: 0 0 5px #add8e6, 0 0 10px #add8e6, 0 0 15px #e066ff, 0 0 20px #e066ff, 0 0 25px #e066ff, 0 0 30px #e066ff, 0 0 35px #e066ff;
+      text-shadow: 0 0 5px #add8e6, 0 0 10px #add8e6, 0 0 15px #e066ff, 0 0 20px #e066ff, 0 0 25px #e066ff, 0 0 30px #e066ff, 0 0 35px #e066ff;
   }
   to {
-    transform: rotate(360deg);
+      box-shadow: 0 0 10px #add8e6, 0 0 20px #add8e6, 0 0 30px #e066ff, 0 0 40px #e066ff, 0 0 50px #e066ff, 0 0 60px #e066ff, 0 0 70px #e066ff;
+      text-shadow: 0 0 10px #add8e6, 0 0 20px #add8e6, 0 0 30px #e066ff, 0 0 40px #e066ff, 0 0 50px #e066ff, 0 0 60px #e066ff, 0 0 70px #e066ff;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.start-game:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: none;
+  box-shadow: 0 0 10px #add8e6, 0 0 20px #add8e6, 0 0 30px #e066ff, 0 0 40px #e066ff, 0 0 50px #e066ff, 0 0 60px #e066ff, 0 0 70px #e066ff;
+  text-shadow: 0 0 10px #add8e6, 0 0 20px #add8e6, 0 0 30px #e066ff, 0 0 40px #e066ff, 0 0 50px #e066ff, 0 0 60px #e066ff, 0 0 70px #e066ff;
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-

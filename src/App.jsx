@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-
+<button className='start-game'>Start</button>
     </>
   )
 }
